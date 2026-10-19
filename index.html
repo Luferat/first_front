@@ -12,6 +12,10 @@
          ***********************************/
 
         /***** Reset Geral *****/
+        /* 
+        Ajusta as tags para se comportar da mesma forma,
+        mesmo com diferenças entre navegadores.
+        +/
 
         /* Todas as caixas */
         * {
@@ -38,7 +42,7 @@
             margin: 0;
             padding: 0;
 
-            /* Definir a fonte padrão e o tamanho */
+            /* Define a fonte padrão e o tamanho */
             font-family: Verdana, Geneva, Tahoma, sans-serif;
             font-size: 16px;
             /* 
@@ -47,6 +51,7 @@
             */
         }
 
+        /* Remove margens fos titulos. */
         h1,
         h2,
         h3,
@@ -65,6 +70,7 @@
             padding: 1rem;
         }
 
+        /* Apenas imagem dentro do header. */
         #wrap>header img {
             display: block;
             width: 5rem;
@@ -72,15 +78,18 @@
             border-radius: 50%;
         }
 
+        /* Elemento div que contém logo e nome do site. */
         #wrap>header>div {
             display: flex;
             align-items:center;
         }
 
+        /* Formulário de pesquisa no header. */
         #wrap > header form {
             margin-top: 1rem;
         }
 
+        /* Título (nome) do site. */
          #wrap > header h1 {
             font-size: 1.7rem;
             color: #fff;
@@ -91,7 +100,8 @@
 
 <body>
 
-    <!-- div conteiner que limita a largura do conteúdo -->
+    <!-- div conteiner que limita a largura do 
+    conteúdo e permite outros efeitos. -->
     <div id="wrap">
 
         <!-- Cabeçalho -->
@@ -120,7 +130,10 @@
 
         <main>
 
-            <!-- Conteúdo principal -->
+            <!-- 
+            Conteúdo principal.
+            No futuro, será gerado pelo back-end.
+            -->
             <section>
 
                 <h2>Página Inicial</h2>
@@ -152,6 +165,7 @@
                     suscipit aspernatur!</p>
 
                 <h4>Imagem interna</h4>
+                <!-- A imagem esta na pasta "img". Atenção a este detalhe. -->
                 <img src="img/vaca.png" alt="Vaquinha">
 
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio iusto autem laudantium non debitis
