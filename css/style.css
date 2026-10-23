@@ -74,6 +74,12 @@ h6 {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+
+    /* Largura máxima do conteúdo */
+    max-width: 1024px;
+
+    /* Centraliza */
+    margin: auto;
 }
 
 /***** Cabeçalho *****/
@@ -234,6 +240,14 @@ h6 {
 img.responsive {
     max-width: 100%;
     width: auto;
+}
+
+.text-red {
+    color: red;
+}
+
+.center {
+    text-align: center;
 }
 
 /**************************/
